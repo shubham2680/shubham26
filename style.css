@@ -16,7 +16,7 @@ body {
     border-radius: 5%; /* Changed from 20px to 5% */
     box-shadow: 0 2.5% 7.5% rgba(0, 0, 0, 0.2); /* Changed from 0 10px 30px */
     text-align: center;
-    width: 40%; /* Changed from 400px to 40% */
+    width: none; /* Changed from 400px to 40% */
 }
 
 div {
