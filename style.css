@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: bisque; /* gradient background */
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 300px;
+}
+
+.calculator {
+    background: #ffffffcc; /* semi-transparent white */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px; /* Default width for larger screens */
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    background-color: cadetblue;
+    height: 300px;
+    width: 300px;
+    margin-right: 500px;
+}
+
+.calculator input {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+button.operator {
+    background: #f9a825;
+    color: white;
+}
+
+.equal {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.clear {
+    background-color: #f44336;
+    color: white;
+    grid-column: span 2;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.deletelast {
+    background-color: #ACB6E5;
+    color: white;
+    grid-column: span 2;
+}
+
+/* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+    body {
+        margin-left: 0;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .calculator {
+        width: 90%; /* Adjust width for mobile screens */
+        padding: 20px;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 50px); /* Smaller button size */
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .calculator input {
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
